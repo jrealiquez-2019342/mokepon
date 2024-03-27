@@ -1,43 +1,87 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="UTF-8"/>
-        <title>MOKEPON!</title>
-    </head>
-    <body>
 
-        <h1>MOKEPON! 🔥💧🌱</h1>
+<head>
+    <meta charset="UTF-8" />
+    <title>MOKEPON!</title>
+</head>
+
+<body>
+
+    <h1>MOKEPON! 🔥💧🌱</h1>
 
 
-        <section id="seleccionar-mascota">
-            <h2>Elige tu mascota:</h2>
-            MASCOTAS
-            <button>Seleccionar</button>
-        </section>
+    <section id="seleccionar-mascota">
+        <h2>Elige tu mascota:</h2>
+        <!--Hipodoge -> Agua
+            Capipepo -> Tierra
+            Ratigueya -> Fuego
+            Langostelvis -> Agua y Fuego
+            Tucapalma -> Agua y Tierra
+            Pydos -> Tierra y Fuego
+            <button>Seleccionar</button>-->
 
-        <section id="seleccionar-ataque">
-            <h2>Elige tu ataque:</h2>
+        <!-- Permite pedir informacion al usuario | Input-->
+        <!-- el for nos permite relacionar el label con el input para seleccionarlo-->
+        <!--<label for="hipodoge"> Hipodoge </label>
+            <input type="radio" name="mascota" id="hipodoge"/>
+            <label for="capipepo"> Capipepo </label>
+            <input type="radio" name="mascota" id="capipepo"/>
+            <label for="ratigueya"> Ratigueya </label>
+            <input type="radio" name="mascota" id="ratigueya"/>
+            <label for="langostelvis"> Langostelvis </label>
+            <input type="radio" name="mascota" id="langostelvis"/>
+            <label for="tucapalma"> Tucapalma </label>
+            <input type="radio" name="mascota" id="tucapalma"/>
+            <label for="pydos"> Pydos </label>
+            <input type="radio" name="mascota" id="pydos"/>
+            -->
 
-            <!-- Para hacerlo dinamico usamos el span | Nos ayuda a envolver-->
-            <p>tu mascota tiene <span>3</span> vidas</p>
-            <p>La mascota del enemigo tiene <span>3</span> vidas</p>
+        <select >
+            <optgroup label="AGUA">
+                <option value="hipodoge">Hipodoge 💧</option>
+                <option value="suggles">Suggles 💧</option>
+            </optgroup>
+            <optgroup label="TIERRA">
+                <option value="capipepo">Capipepo 🌱</option>
+                <option value="todd">Todd 🌱</option>
+            </optgroup>
+            <optgroup label="FUEGO">
+                <option value="ratigueya">Ratigueya 🔥</option>
+                <option value="kailamor">Kailamor 🔥</option>
+            </optgroup>
+            <optgroup label="HIBDRIDO">
+                <option value="tucapalma">Tucapalma 💧🌱</option>
+                <option value="pydos">Pydos 🌱🔥</option>
+            </optgroup>
+        </select>
 
-            <!-- Siempre necesitamos un contenedor para colocar un boton-->
-            <p>
-                <button>Fuego 🔥</button>
-                <button>Agua 💧</button>
-                <button>Tierra 🌱</button>
-            </p>
-        </section>
+    </section>
 
-        <section id="mensajes">
-            <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
-        </section>
+    <section id="seleccionar-ataque">
+        <h2>Elige tu ataque:</h2>
 
-        <section id="reiniciar">
-            <button>Reiniciar</button>
-        </section>
+        <!-- Para hacerlo dinamico usamos el span | Nos ayuda a envolver-->
+        <p>tu mascota tiene <span>3</span> vidas</p>
+        <p>La mascota del enemigo tiene <span>3</span> vidas</p>
 
-        
-    </body>
+        <!-- Siempre necesitamos un contenedor para colocar un boton-->
+        <p>
+            <button>Fuego 🔥</button>
+            <button>Agua 💧</button>
+            <button>Tierra 🌱</button>
+        </p>
+    </section>
+
+    <section id="mensajes">
+        <p>Tu mascota atacó con FUEGO, la mascota del enemigo atacó con TIERRA - GANASTE 🎉</p>
+    </section>
+
+    <section id="reiniciar">
+        <button>Reiniciar</button>
+    </section>
+
+
+</body>
+
 </html>
